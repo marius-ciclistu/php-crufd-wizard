@@ -4,10 +4,11 @@ namespace MacropaySolutions\CrufdWizard\Providers;
 
 use MacropaySolutions\CrufdWizard\Helpers\GeneralHelper;
 use MacropaySolutions\CrufdWizard\Responses\DecoratableJsonResponse;
+use MacropaySolutions\Kernel\Contracts\Support\DeferrableProvider;
 use MacropaySolutions\Kernel\Http\JsonResponse;
 use MacropaySolutions\Kernel\Support\ServiceProvider;
 
-class CrufdProvider extends ServiceProvider
+class CrufdProvider extends ServiceProvider implements DeferrableProvider
 {
     /**
      * Register any application services.
